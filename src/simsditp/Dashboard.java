@@ -15,20 +15,22 @@ public class Dashboard extends javax.swing.JFrame {
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
 
         execute();
-        
+
         if (Session.getValidStatus()) {
             labelRole.setText(Session.getRole());
         }
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         sidebar = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         pn_menu = new javax.swing.JPanel();
-        filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0));
+        filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0),
+                new java.awt.Dimension(0, 0));
         navbar = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -64,15 +66,13 @@ public class Dashboard extends javax.swing.JFrame {
         javax.swing.GroupLayout sidebarLayout = new javax.swing.GroupLayout(sidebar);
         sidebar.setLayout(sidebarLayout);
         sidebarLayout.setHorizontalGroup(
-            sidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(sidebarLayout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
-        );
+                sidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(sidebarLayout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+                                .addGap(0, 0, 0)));
         sidebarLayout.setVerticalGroup(
-            sidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1)
-        );
+                sidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane1));
 
         getContentPane().add(sidebar, java.awt.BorderLayout.LINE_START);
 
@@ -107,43 +107,57 @@ public class Dashboard extends javax.swing.JFrame {
         javax.swing.GroupLayout navbarLayout = new javax.swing.GroupLayout(navbar);
         navbar.setLayout(navbarLayout);
         navbarLayout.setHorizontalGroup(
-            navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(navbarLayout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
-                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addGroup(navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(labelRole, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(31, 31, 31))
-        );
+                navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(navbarLayout.createSequentialGroup()
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0,
+                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(navbarLayout
+                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 153,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(27, 27, 27)
+                                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
+                                .addGroup(navbarLayout
+                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(labelRole, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(31, 31, 31)));
         navbarLayout.setVerticalGroup(
-            navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(navbarLayout.createSequentialGroup()
-                .addGroup(navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(navbarLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel4))
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(navbarLayout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addGroup(navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(navbarLayout.createSequentialGroup()
-                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, 0)
-                                .addComponent(jLabel7))
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(labelRole, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(14, Short.MAX_VALUE))
-        );
+                navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(navbarLayout.createSequentialGroup()
+                                .addGroup(navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(navbarLayout.createSequentialGroup()
+                                                .addContainerGap()
+                                                .addComponent(jLabel4))
+                                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 36,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(navbarLayout.createSequentialGroup()
+                                                .addGap(12, 12, 12)
+                                                .addGroup(navbarLayout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                        .addGroup(navbarLayout.createSequentialGroup()
+                                                                .addComponent(jLabel8,
+                                                                        javax.swing.GroupLayout.PREFERRED_SIZE, 25,
+                                                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addGap(0, 0, 0)
+                                                                .addComponent(jLabel7))
+                                                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(labelRole, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                Short.MAX_VALUE))))
+                                .addContainerGap(14, Short.MAX_VALUE)));
 
         getContentPane().add(navbar, java.awt.BorderLayout.PAGE_START);
 
@@ -155,13 +169,12 @@ public class Dashboard extends javax.swing.JFrame {
         javax.swing.GroupLayout contentLayout = new javax.swing.GroupLayout(content);
         content.setLayout(contentLayout);
         contentLayout.setHorizontalGroup(
-            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelutama, javax.swing.GroupLayout.DEFAULT_SIZE, 555, Short.MAX_VALUE)
-        );
+                contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(panelutama, javax.swing.GroupLayout.DEFAULT_SIZE, 555, Short.MAX_VALUE));
         contentLayout.setVerticalGroup(
-            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelutama, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+                contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(panelutama, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
 
         getContentPane().add(content, java.awt.BorderLayout.CENTER);
 
@@ -169,11 +182,11 @@ public class Dashboard extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {// GEN-FIRST:event_formWindowOpened
         panelutama.add(new Home());
         panelutama.repaint();
         panelutama.revalidate();
-    }//GEN-LAST:event_formWindowOpened
+    }// GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
@@ -186,14 +199,18 @@ public class Dashboard extends javax.swing.JFrame {
         if (Session.getValidStatus()) {
             loginWindow.dispose(); // Tutup jendela login
             dashboardWindow.setVisible(true); // Tampilkan jendela dashboard
-        }else{
+        } else {
             // Tampilkan jendela login saat aplikasi dimulai
             loginWindow.setVisible(true);
         }
         /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+        // <editor-fold defaultstate="collapsed" desc=" Look and feel setting code
+        // (optional) ">
+        /*
+         * If Nimbus (introduced in Java SE 6) is not available, stay with the default
+         * look and feel.
+         * For details see
+         * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -211,8 +228,8 @@ public class Dashboard extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
+        // </editor-fold>
+        // </editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -282,7 +299,7 @@ public class Dashboard extends javax.swing.JFrame {
                 pegawai.datatable();
             }
         });
-        
+
         MenuItem masBarang3 = new MenuItem(null, true, iconkelas, "Kelas", new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -317,7 +334,7 @@ public class Dashboard extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 panelutama.removeAll();
-                FormTransaksi spp = new FormTransaksi();
+                CRUD_SPP spp = new CRUD_SPP();
                 panelutama.add(spp);
                 spp.setVisible(true); // Menampilkan spp
                 panelutama.repaint();
@@ -325,13 +342,8 @@ public class Dashboard extends javax.swing.JFrame {
 
             }
         });
-<<<<<<< Updated upstream:src/simsditp/Dashboard.java
-        
-        MenuItem transaksi2 = new MenuItem(null, true, iconAbsen, "Absesi", new ActionListener() {
-=======
 
-        Menu_Sidebar transaksi2 = new Menu_Sidebar(null, true, iconAbsen, "Absensi", new ActionListener() {
->>>>>>> Stashed changes:src/view/Dashboard.java
+        MenuItem transaksi2 = new MenuItem(null, true, iconAbsen, "Absesi", new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 panelutama.removeAll();
@@ -343,7 +355,7 @@ public class Dashboard extends javax.swing.JFrame {
 
             }
         });
-        
+
         MenuItem transaksi3 = new MenuItem(null, true, iconNilai, "Nilai Ujian", new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -359,24 +371,7 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
-<<<<<<< Updated upstream:src/simsditp/Dashboard.java
         MenuItem menuHome = new MenuItem(iconHome, false, null, "Home", new ActionListener() {
-=======
-        Menu_Sidebar transaksi4 = new Menu_Sidebar(null, true, iconNilai, "Absensi Pegawai", new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                panelutama.removeAll();
-                absenpegawai absenpegawai = new absenpegawai();
-                panelutama.add(absenpegawai);
-                absenpegawai.setVisible(true); // Menampilkan Niai Ujian
-                panelutama.repaint();
-                panelutama.revalidate();
-
-            }
-        });
-
-        Menu_Sidebar menuHome = new Menu_Sidebar(iconHome, false, null, "Home", new ActionListener() {
->>>>>>> Stashed changes:src/view/Dashboard.java
             @Override
             public void actionPerformed(ActionEvent e) {
                 panelutama.removeAll();
@@ -401,25 +396,20 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
-        MenuItem menuMaster = new MenuItem(iconMaster, false, null, "Master", null, masBarang1, masBarang2, masBarang3,masBarang4);
-//        MenuItem menuTransaksi = new MenuItem(iconTransaksi, false, null, "Transaksi", null, transaksi1, transaksi2, transaksi3);
+        MenuItem menuMaster = new MenuItem(iconMaster, false, null, "Master", null, masBarang1, masBarang2, masBarang3,
+                masBarang4);
+        // MenuItem menuTransaksi = new MenuItem(iconTransaksi, false, null,
+        // "Transaksi", null, transaksi1, transaksi2, transaksi3);
         MenuItem menuReport = new MenuItem(iconReport, false, null, "Report", null);
 
-<<<<<<< Updated upstream:src/simsditp/Dashboard.java
         String role = Session.getRole();
-        if(role.equals("Guru")) {
-            MenuItem menuTransaksi = new MenuItem(iconTransaksi, false, null, "Transaksi", null, transaksi2, transaksi3);
-=======
-        if ("admin".equalsIgnoreCase(userLevel)) {
-            Menu_Sidebar menuTransaksi = new Menu_Sidebar(iconTransaksi, false, null, "Transaksi", null, transaksi1, transaksi2, transaksi3, transaksi4);
-            addMenu(menuHome, menuMaster, menuTransaksi, menuReport, menuLogout);
-            lebeluser.setText("Admin"); // Set label text for admin
-        } else if ("guru".equalsIgnoreCase(userLevel)) {
-            Menu_Sidebar menuTransaksi = new Menu_Sidebar(iconTransaksi, false, null, "Transaksi", null, transaksi2, transaksi3,transaksi4);
->>>>>>> Stashed changes:src/view/Dashboard.java
+        if (role.equals("Guru")) {
+            MenuItem menuTransaksi = new MenuItem(iconTransaksi, false, null, "Transaksi", null, transaksi2,
+                    transaksi3);
             addMenu(menuHome, menuTransaksi, menuLogout);
-        }else{
-            MenuItem menuTransaksi = new MenuItem(iconTransaksi, false, null, "Transaksi", null, transaksi1, transaksi2, transaksi3);
+        } else {
+            MenuItem menuTransaksi = new MenuItem(iconTransaksi, false, null, "Transaksi", null, transaksi1, transaksi2,
+                    transaksi3);
             addMenu(menuHome, menuMaster, menuTransaksi, menuReport, menuLogout);
         }
 
@@ -437,7 +427,8 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     public boolean confirmLogout() {
-        int result = JOptionPane.showConfirmDialog(null, "Apakah Anda yakin ingin logout?", "Konfirmasi Logout", JOptionPane.YES_NO_OPTION);
+        int result = JOptionPane.showConfirmDialog(null, "Apakah Anda yakin ingin logout?", "Konfirmasi Logout",
+                JOptionPane.YES_NO_OPTION);
         return result == JOptionPane.YES_OPTION;
     }
 
