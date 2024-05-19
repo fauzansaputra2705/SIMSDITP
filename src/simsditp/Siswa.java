@@ -244,7 +244,6 @@ public class Siswa extends javax.swing.JPanel {
         cbkelas = new javax.swing.JComboBox<>();
         txttempatlahir = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jtanggal = new com.toedter.calendar.JDateChooser();
         txtid = new javax.swing.JTextField();
         cbkelamin = new javax.swing.JComboBox<>();
         txtnipd = new javax.swing.JTextField();
@@ -259,7 +258,6 @@ public class Siswa extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         txtlabel2 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
-        jtanggal1 = new com.toedter.calendar.JDateChooser();
         jLabel29 = new javax.swing.JLabel();
         txttempatlahir1 = new javax.swing.JTextField();
         cbkelamin1 = new javax.swing.JComboBox<>();
@@ -524,12 +522,6 @@ public class Siswa extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel4.setText("ID Siswa");
 
-        jtanggal.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jtanggalKeyPressed(evt);
-            }
-        });
-
         txtid.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         txtid.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         txtid.addActionListener(new java.awt.event.ActionListener() {
@@ -621,12 +613,11 @@ public class Siswa extends javax.swing.JPanel {
                 .addComponent(simpan)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(keluar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(921, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel2Layout.createSequentialGroup()
                     .addContainerGap()
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jtanggal, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 1079, Short.MAX_VALUE)
                         .addComponent(txttempatlahir, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(cbkelamin, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(cbkelas, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -681,9 +672,7 @@ public class Siswa extends javax.swing.JPanel {
                     .addComponent(txttempatlahir, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(18, 18, 18)
                     .addComponent(jLabel21)
-                    .addGap(0, 0, 0)
-                    .addComponent(jtanggal, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(53, Short.MAX_VALUE)))
+                    .addContainerGap(91, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout tambahSiswaLayout = new javax.swing.GroupLayout(tambahSiswa);
@@ -730,12 +719,6 @@ public class Siswa extends javax.swing.JPanel {
         });
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-
-        jtanggal1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jtanggal1KeyPressed(evt);
-            }
-        });
 
         jLabel29.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel29.setText("Nama Siswa");
@@ -863,17 +846,11 @@ public class Siswa extends javax.swing.JPanel {
                 .addComponent(simpan1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(keluar1)
-                .addContainerGap(905, Short.MAX_VALUE))
+                .addContainerGap(915, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addContainerGap()
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jtanggal1, javax.swing.GroupLayout.DEFAULT_SIZE, 1079, Short.MAX_VALUE)
-                        .addComponent(txttempatlahir1)
-                        .addComponent(cbkelas1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtnama1)
-                        .addComponent(txtnipd1)
-                        .addComponent(txtid1)
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -881,15 +858,22 @@ public class Siswa extends javax.swing.JPanel {
                                     .addComponent(jLabel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(0, 0, Short.MAX_VALUE))
-                        .addComponent(cbkelamin1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel6)
                                 .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(779, 779, 779)))
-                    .addContainerGap()))
+                            .addGap(1008, 1008, 1008))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txttempatlahir1)
+                                .addComponent(cbkelas1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(txtnama1)
+                                .addComponent(txtnipd1)
+                                .addComponent(txtid1)
+                                .addComponent(cbkelamin1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addContainerGap()))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -927,9 +911,7 @@ public class Siswa extends javax.swing.JPanel {
                     .addComponent(txttempatlahir1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(18, 18, 18)
                     .addComponent(jLabel27)
-                    .addGap(0, 0, 0)
-                    .addComponent(jtanggal1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(55, Short.MAX_VALUE)))
+                    .addContainerGap(100, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout editSiswaLayout = new javax.swing.GroupLayout(editSiswa);
@@ -1341,8 +1323,6 @@ public class Siswa extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel jlabel;
-    private com.toedter.calendar.JDateChooser jtanggal;
-    private com.toedter.calendar.JDateChooser jtanggal1;
     private javax.swing.JButton keluar;
     private javax.swing.JButton keluar1;
     private javax.swing.JPanel mainpanel;

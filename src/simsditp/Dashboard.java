@@ -170,7 +170,7 @@ public class Dashboard extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        panelutama.add(new content_bg());
+        panelutama.add(new Home());
         panelutama.repaint();
         panelutama.revalidate();
     }//GEN-LAST:event_formWindowOpened
@@ -314,7 +314,18 @@ public class Dashboard extends javax.swing.JFrame {
         });
 
         MenuItem transaksi1 = new MenuItem(null, true, iconSpp, "SPP", null);
-        MenuItem transaksi2 = new MenuItem(null, true, iconAbsen, "Absesi", null);
+        MenuItem transaksi2 = new MenuItem(null, true, iconAbsen, "Absesi", new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelutama.removeAll();
+                Absen absen = new Absen();
+                panelutama.add(absen);
+                absen.setVisible(true); // Menampilkan Absen
+                panelutama.repaint();
+                panelutama.revalidate();
+
+            }
+        });
         
         MenuItem transaksi3 = new MenuItem(null, true, iconNilai, "Nilai Ujian", new ActionListener() {
             @Override
@@ -335,7 +346,7 @@ public class Dashboard extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 panelutama.removeAll();
-                panelutama.add(new content_bg());
+                panelutama.add(new Home());
                 panelutama.repaint();
                 panelutama.revalidate();
             }

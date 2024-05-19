@@ -358,13 +358,12 @@
                           <Component id="simpan" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="keluar" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="921" max="32767" attributes="0"/>
                       </Group>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jtanggal" alignment="0" pref="1079" max="32767" attributes="0"/>
                                   <Component id="txttempatlahir" alignment="0" max="32767" attributes="0"/>
                                   <Component id="cbkelamin" alignment="0" max="32767" attributes="0"/>
                                   <Component id="cbkelas" alignment="0" max="32767" attributes="0"/>
@@ -427,9 +426,7 @@
                               <Component id="txttempatlahir" min="-2" pref="31" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jtanggal" min="-2" pref="30" max="-2" attributes="0"/>
-                              <EmptySpace pref="53" max="32767" attributes="0"/>
+                              <EmptySpace pref="91" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -511,11 +508,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="ID Siswa"/>
                   </Properties>
-                </Component>
-                <Component class="com.toedter.calendar.JDateChooser" name="jtanggal">
-                  <Events>
-                    <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jtanggalKeyPressed"/>
-                  </Events>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtid">
                   <Properties>
@@ -740,18 +732,12 @@
                           <Component id="simpan1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="keluar1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="905" max="32767" attributes="0"/>
+                          <EmptySpace pref="915" max="32767" attributes="0"/>
                       </Group>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jtanggal1" alignment="0" pref="1079" max="32767" attributes="0"/>
-                                  <Component id="txttempatlahir1" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="cbkelas1" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtnama1" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtnipd1" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtid1" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
@@ -761,19 +747,28 @@
                                           </Group>
                                           <Component id="jLabel26" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
-                                  <Component id="cbkelamin1" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel25" min="-2" pref="39" max="-2" attributes="0"/>
                                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel27" min="-2" pref="91" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="-2" pref="779" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="1008" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txttempatlahir1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="cbkelas1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtnama1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtnipd1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtid1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="cbkelamin1" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -816,20 +811,13 @@
                               <Component id="txttempatlahir1" min="-2" pref="31" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jtanggal1" min="-2" pref="27" max="-2" attributes="0"/>
-                              <EmptySpace pref="55" max="32767" attributes="0"/>
+                              <EmptySpace pref="100" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="com.toedter.calendar.JDateChooser" name="jtanggal1">
-                  <Events>
-                    <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jtanggal1KeyPressed"/>
-                  </Events>
-                </Component>
                 <Component class="javax.swing.JLabel" name="jLabel29">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
