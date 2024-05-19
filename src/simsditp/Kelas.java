@@ -97,7 +97,6 @@ public class Kelas extends javax.swing.JPanel {
     }
 
     private void updateCombo4() {
-        String sql = "SELECT * FROM kelas";
         try {
             String query = "SELECT * FROM kelas";
             ResultSet result = SQLConnection.doQuery(query);
@@ -813,7 +812,6 @@ public class Kelas extends javax.swing.JPanel {
     }//GEN-LAST:event_keluarActionPerformed
 
     private void simpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanActionPerformed
-        String sql = "insert into guru values (?,?)";
         try {
             String query = "INSERT INTO guru (nama_guru, wali_kelas) VALUES (?,?)";
             Boolean insert = SQLConnection.doPreparedUpdate(
