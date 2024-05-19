@@ -89,7 +89,7 @@ public class Dashboard extends javax.swing.JFrame {
         labelRole.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         labelRole.setForeground(new java.awt.Color(255, 255, 255));
         labelRole.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelRole.setText("Admin");
+        labelRole.setText("LEVEL");
         labelRole.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -128,25 +128,21 @@ public class Dashboard extends javax.swing.JFrame {
             navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(navbarLayout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(navbarLayout.createSequentialGroup()
-                .addGap(12, 12, 12)
                 .addGroup(navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(navbarLayout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(labelRole, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addComponent(jLabel4))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(navbarLayout.createSequentialGroup()
+                        .addGap(12, 12, 12)
                         .addGroup(navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(navbarLayout.createSequentialGroup()
                                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, 0)
                                 .addComponent(jLabel7))
-                            .addGroup(navbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGap(12, 12, 12))))
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelRole, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         getContentPane().add(navbar, java.awt.BorderLayout.PAGE_START);
@@ -319,7 +315,21 @@ public class Dashboard extends javax.swing.JFrame {
 
         MenuItem transaksi1 = new MenuItem(null, true, iconSpp, "SPP", null);
         MenuItem transaksi2 = new MenuItem(null, true, iconAbsen, "Absesi", null);
-        MenuItem transaksi3 = new MenuItem(null, true, iconNilai, "Nilai Ujian", null);
+        
+        MenuItem transaksi3 = new MenuItem(null, true, iconNilai, "Nilai Ujian", new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelutama.removeAll();
+                Nilai nilai = new Nilai();
+                panelutama.add(nilai);
+                nilai.setVisible(true);
+                panelutama.repaint();
+                panelutama.revalidate();
+
+                nilai.tampilkanDataSiswa();
+                nilai.updateTabelGuru();
+            }
+        });
 
         MenuItem menuHome = new MenuItem(iconHome, false, null, "Home", new ActionListener() {
             @Override

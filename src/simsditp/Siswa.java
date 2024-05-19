@@ -1,10 +1,8 @@
 package simsditp;
 
 import Database.SQLConnection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -26,6 +24,7 @@ public class Siswa extends javax.swing.JPanel {
         initComponents();
         autonumber();
         updateCombo();
+        updateCombo1();
         txtlabel.setBackground(new java.awt.Color(0, 0, 0, 1));
         txtlabel1.setBackground(new java.awt.Color(0, 0, 0, 1));
         txtlabel2.setBackground(new java.awt.Color(0, 0, 0, 1));
@@ -198,7 +197,18 @@ public class Siswa extends javax.swing.JPanel {
             while (result.next()) {
                 cbkelas.addItem(result.getString("kelas"));
             }
-        } catch (Exception e) {
+        } catch (SQLException e) {
+        }
+    }
+    
+    private void updateCombo1() {
+        try {
+            String query = "SELECT * FROM kelas";
+            ResultSet result = SQLConnection.doQuery(query);
+            while (result.next()) {
+                cbkelas1.addItem(result.getString("kelas"));
+            }
+        } catch (SQLException e) {
         }
     }
 
