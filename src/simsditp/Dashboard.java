@@ -313,7 +313,19 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
-        MenuItem transaksi1 = new MenuItem(null, true, iconSpp, "SPP", null);
+        MenuItem transaksi1 = new MenuItem(null, true, iconSpp, "SPP", new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelutama.removeAll();
+                FormTransaksi spp = new FormTransaksi();
+                panelutama.add(spp);
+                spp.setVisible(true); // Menampilkan spp
+                panelutama.repaint();
+                panelutama.revalidate();
+
+            }
+        });
+        
         MenuItem transaksi2 = new MenuItem(null, true, iconAbsen, "Absesi", new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
