@@ -325,8 +325,13 @@ public class Dashboard extends javax.swing.JFrame {
 
             }
         });
+<<<<<<< Updated upstream:src/simsditp/Dashboard.java
         
         MenuItem transaksi2 = new MenuItem(null, true, iconAbsen, "Absesi", new ActionListener() {
+=======
+
+        Menu_Sidebar transaksi2 = new Menu_Sidebar(null, true, iconAbsen, "Absensi", new ActionListener() {
+>>>>>>> Stashed changes:src/view/Dashboard.java
             @Override
             public void actionPerformed(ActionEvent e) {
                 panelutama.removeAll();
@@ -354,7 +359,24 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< Updated upstream:src/simsditp/Dashboard.java
         MenuItem menuHome = new MenuItem(iconHome, false, null, "Home", new ActionListener() {
+=======
+        Menu_Sidebar transaksi4 = new Menu_Sidebar(null, true, iconNilai, "Absensi Pegawai", new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelutama.removeAll();
+                absenpegawai absenpegawai = new absenpegawai();
+                panelutama.add(absenpegawai);
+                absenpegawai.setVisible(true); // Menampilkan Niai Ujian
+                panelutama.repaint();
+                panelutama.revalidate();
+
+            }
+        });
+
+        Menu_Sidebar menuHome = new Menu_Sidebar(iconHome, false, null, "Home", new ActionListener() {
+>>>>>>> Stashed changes:src/view/Dashboard.java
             @Override
             public void actionPerformed(ActionEvent e) {
                 panelutama.removeAll();
@@ -383,9 +405,18 @@ public class Dashboard extends javax.swing.JFrame {
 //        MenuItem menuTransaksi = new MenuItem(iconTransaksi, false, null, "Transaksi", null, transaksi1, transaksi2, transaksi3);
         MenuItem menuReport = new MenuItem(iconReport, false, null, "Report", null);
 
+<<<<<<< Updated upstream:src/simsditp/Dashboard.java
         String role = Session.getRole();
         if(role.equals("Guru")) {
             MenuItem menuTransaksi = new MenuItem(iconTransaksi, false, null, "Transaksi", null, transaksi2, transaksi3);
+=======
+        if ("admin".equalsIgnoreCase(userLevel)) {
+            Menu_Sidebar menuTransaksi = new Menu_Sidebar(iconTransaksi, false, null, "Transaksi", null, transaksi1, transaksi2, transaksi3, transaksi4);
+            addMenu(menuHome, menuMaster, menuTransaksi, menuReport, menuLogout);
+            lebeluser.setText("Admin"); // Set label text for admin
+        } else if ("guru".equalsIgnoreCase(userLevel)) {
+            Menu_Sidebar menuTransaksi = new Menu_Sidebar(iconTransaksi, false, null, "Transaksi", null, transaksi2, transaksi3,transaksi4);
+>>>>>>> Stashed changes:src/view/Dashboard.java
             addMenu(menuHome, menuTransaksi, menuLogout);
         }else{
             MenuItem menuTransaksi = new MenuItem(iconTransaksi, false, null, "Transaksi", null, transaksi1, transaksi2, transaksi3);
